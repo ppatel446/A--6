@@ -17,15 +17,11 @@ export default function RouteGuard(props) {
     const [favouritesList, setFavouritesList] = useAtom(favouritesAtom);
 
     useEffect(() => {
-        // ensure that our atoms are up to date when the user refreshes the page
         updateAtoms()
-        // on initial load - run auth check 
         authCheck(router.pathname);
 
-        // on route change complete - run auth check 
         router.events.on('routeChangeComplete', authCheck)
 
-        // unsubscribe from events in useEffect return function
         return () => {
             router.events.off('routeChangeComplete', authCheck);
         }
@@ -33,7 +29,6 @@ export default function RouteGuard(props) {
     }, []);
 
     function authCheck(url) {
-        // redirect to login page if accessing a private page and not logged in 
         const path = url.split('?')[0];
         if (!isAuthenticated() && !PUBLIC_PATHS.includes(path)) {
             setAuthorized(false);
