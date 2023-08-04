@@ -40,7 +40,7 @@ const MainNav=()=>{
      <>
       <Navbar className="fixed-top navbar-dark bg-dark" bg="light" expand="lg" expanded={isExpanded}>
          <Container>
-            <Navbar.Brand>Wudi Xia</Navbar.Brand>
+            <Navbar.Brand>Prey Bipinkumar Patel</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={(e) => {setIsExpanded(!isExpanded)}}/>
             <Navbar.Collapse id="basic-navbar-nav">
                <Nav className="me-auto">
