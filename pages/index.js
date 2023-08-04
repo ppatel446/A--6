@@ -6,8 +6,8 @@
 * 
 *  Name: Prey Bipinkumar Patel _______ Student ID: 168954212________ Date: 2023-08-04_______
 *
-*   Vercel App (Deployed) Link: _____________________________________________________
-*
+*   Vercel App (Deployed) Link: https://super-biscotti-3f241a.netlify.app/_____________________________________________________
+* github :- https://github.com/ppatel446/A--6 
 ********************************************************************************/ 
 
 import React from 'react'
